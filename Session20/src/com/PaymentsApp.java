@@ -1,5 +1,5 @@
 package com;
-// abstraction and injeritence
+// abstraction and inheritance
 // EStore extends payTm and gets the messages from it
 
 abstract class PayTmPaymentGateway {
