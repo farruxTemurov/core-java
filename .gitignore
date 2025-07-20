@@ -1,1 +1,13 @@
-/.metadata/
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# Gradle
+.gradle/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
