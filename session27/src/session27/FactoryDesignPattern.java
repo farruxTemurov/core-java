@@ -39,6 +39,25 @@ class Plan3G implements Plan {
 
 }
 
+class Plan4G implements Plan {
+
+	@Override
+	public String getPlanName() {
+		return " Truly Unlimited 4G";
+	}
+
+	@Override
+	public int getPlanPrice() {
+		return 370;
+	}
+
+	@Override
+	public void onPurchse(String message) {
+		System.out.println("[Message]: " + message);
+	}
+
+}
+
 public class FactoryDesignPattern {
 
 	public static void main(String[] args) {
