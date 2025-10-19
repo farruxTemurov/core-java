@@ -11,12 +11,21 @@ public class ExceptionHandling {
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.println("Enter your lucky number");
-		int luckyNumber = 0;
-		luckyNumber = scanner.nextInt();
+		int luckyNumber = -1;
+		try {
+			luckyNumber = scanner.nextInt();
+		} catch (Exception ref) {
+			System.out.println("message: " + ref.getMessage());
+		}
 		scanner.close();
 		int cashbackEarned = 0;
-
-		cashbackEarned = cashbacks[luckyNumber];
+		try {
+			cashbackEarned = cashbacks[luckyNumber];
+		} catch (Exception ref) {
+			ref.printStackTrace();
+		} finally {
+			System.out.println("This is an important instruction!");
+		}
 		System.out.println("Thanks for your participation, your earned cashback is $" + cashbackEarned);
 
 	}
