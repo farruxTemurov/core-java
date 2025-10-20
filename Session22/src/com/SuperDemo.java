@@ -32,7 +32,7 @@ class Parent {
 class Child extends Parent {
 	Child() {
 //		super(); // this is for default parent constructor 
-		super("John", "Wickm", 50299);
+		super("John", "Wick", 50299);
 		System.out.println("Child object constructed");
 	}
 
