@@ -1,3 +1,4 @@
+// Example of generics in java
 package com;
 
 public class Pair<T, U> {
@@ -6,7 +7,6 @@ public class Pair<T, U> {
 	private final U value2;
 
 	public Pair(T value1, U value2) {
-		super();
 		this.value1 = value1;
 		this.value2 = value2;
 	}
